@@ -1,0 +1,126 @@
+@font-face {
+  font-family: 'Hultog';
+  src: url('/fonts/Hultog.eot'); /* IE9 Compat Modes */
+  src: url('/fonts/Hultog.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/fonts/Hultog.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/fonts/Hultog.woff') format('woff'), /* Pretty Modern Browsers */
+       url('/fonts/Hultog.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('/fonts/Hultog.svg#Hultog') format('svg'); /* Legacy iOS */
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+
+  font-family: helvetica, arial, sans-serif;
+
+  background-color: #423b2f; /* rgb: 66 59 47 */
+  color: #95866b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a, a:hover, a:active, a:visited, a:link {
+  text-decoration: none;
+  color: #b3a894;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Hultog';
+  color: #6c604d;
+}
+
+p {
+  font-family: Georgia, serif;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.clearfix {
+    *zoom: 1;
+}
+
+.btn {
+  color: #423b2f; /* rgb: 66 59 47 */
+  background-color: #95866b;
+}
+.btn a {
+  color: inherit;
+}
+
+.container {
+  max-width: 45em;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.hero-image {
+  width: 100%;
+  margin: 0 auto;
+}
+.hero-image img {
+  width: 100%;
+}
+
+nav {
+  margin: 2em 0;
+}
+
+nav ul {
+  max-width: 360px;
+  padding: 0;
+  margin: 0 auto;
+  list-style: none;
+}
+
+nav ul li a {
+  padding: 0 0.5em;
+  height: 2em;
+  font-weight: 800;
+  font-size: 1.3em;
+  float: left;
+}
+
+nav ul li a.active {
+  border-bottom: 2px #011740 solid;
+}
+
+footer {
+  margin-top: 4em;
+  padding: 2em 3em; 
+  color: #423b2f; /* rgb: 66 59 47 */
+  background-color: #95866b;
+}
+
+@media screen and (max-width: 1024px) { /* Specific to this particular image */
+  img.bg {
+    left: 50%;
+    margin-left: -512px;   /* 50% */
+  }
+}
+@media (max-width: 40em) {
+  .container {
+    padding: 2em;
+  }
+
+  nav ul {
+    width: 260px;
+  }
+  nav ul li a {
+    font-size: 0.9em;
+  }
+}
